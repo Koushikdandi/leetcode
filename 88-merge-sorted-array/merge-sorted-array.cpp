@@ -11,17 +11,18 @@ public:
                 ans.push_back(nums1[a]);
                 a++;
             }
-            else if(a>=m)
-            {
-                ans.push_back(nums2[b]);
-                b++;
-            }
+            
             
             else if(a<m && b<n && nums1[a]>=nums2[b])
                 {
                     ans.push_back(nums2[b]);
                     b++;
                 }
+                else if(a>=m)
+            {
+                ans.push_back(nums2[b]);
+                b++;
+            }
             
             
             else if(b>=n)
